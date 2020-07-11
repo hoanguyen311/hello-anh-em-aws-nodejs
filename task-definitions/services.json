@@ -1,0 +1,13 @@
+[
+ {
+  "name": "nodejs-hello-task",
+"image": "${aws_ecr_repository.nodejs_hello_repo.repository_url}",
+"essential": true,
+"portMappings": [{ "containerPort": 3000, "hostPort": 3000  }],
+"memory": 512,
+"cpu": 256
+ }
+
+]
+
+
